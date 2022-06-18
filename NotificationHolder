@@ -7,8 +7,8 @@ if not GUI then
     AES_Notifications.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     AES_Notifications.ResetOnSpawn = false
     
-    AES_NofiticationUIListLayouts.Name = "STX_NofiticationUIListLayout"
-    AES_NofiticationUIListLayouts.Parent = STX_Nofitication
+    AES_NofiticationUIListLayouts.Name = "AES_NotificationUIListLayout"
+    AES_NofiticationUIListLayouts.Parent = AES_Notifications
     AES_NofiticationUIListLayouts.HorizontalAlignment = Enum.HorizontalAlignment.Right
     AES_NofiticationUIListLayouts.SortOrder = Enum.SortOrder.LayoutOrder
     AES_NofiticationUIListLayouts.VerticalAlignment = Enum.VerticalAlignment.Bottom
