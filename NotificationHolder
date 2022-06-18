@@ -1,0 +1,16 @@
+local GUI = game:GetService("CoreGui").RobloxGui:FindFirstChild("AES_Notifications")
+if not GUI then
+    local AES_Notifications = Instance.new("ScreenGui")
+    local AES_NofiticationUIListLayouts = Instance.new("UIListLayout")
+    AES_Notifications.Name = "AES_Notifications"
+    AES_Notifications.Parent = game.CoreGui.RobloxGui
+    AES_Notifications.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    AES_Notifications.ResetOnSpawn = false
+    
+    AES_NofiticationUIListLayouts.Name = "STX_NofiticationUIListLayout"
+    AES_NofiticationUIListLayouts.Parent = STX_Nofitication
+    AES_NofiticationUIListLayouts.HorizontalAlignment = Enum.HorizontalAlignment.Right
+    AES_NofiticationUIListLayouts.SortOrder = Enum.SortOrder.LayoutOrder
+    AES_NofiticationUIListLayouts.VerticalAlignment = Enum.VerticalAlignment.Bottom
+else
+end
