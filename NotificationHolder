@@ -1,4 +1,4 @@
-local GUI = game:GetService("CoreGui"):FindFirstChild("AES_Notifications")
+local GUI = game:GetService("CoreGui").RobloxGui:FindFirstChild("AES_Notifications")
 if not GUI then
     local AES = Instance.new("ScreenGui")
     local AES_NofiticationUIListLayouts = Instance.new("UIListLayout")
