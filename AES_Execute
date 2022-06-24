@@ -1,4 +1,4 @@
-local AES.Execute = {}
+local Execute = {}
 AES.Execute = function(Script)
     local success, response = pcall(function()
         loadstring(script)()
@@ -8,4 +8,4 @@ AES.Execute = function(Script)
         game.Players.LocalPlayer:Kick("Script errored with " .. response)
     end
 end
-return AES.Execute
+return Execute
