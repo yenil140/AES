@@ -1,0 +1,11 @@
+local AES.Execute = {}
+AES.Execute = function(Script)
+    local success, response = pcall(function()
+        loadstring(script)()
+    end)
+    if not success then
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/AES/main/Error"), true))()
+        game.Players.LocalPlayer:Kick("Script errored with " .. response)
+    end
+end
+return AES.Execute
