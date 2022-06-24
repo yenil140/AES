@@ -5,6 +5,7 @@ AES.Execute = function(Script)
     end)
     if not success then
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/AES/main/Error"), true))()
+        wait(1)
         game.Players.LocalPlayer:Kick("Script errored with " .. response)
     end
 end
