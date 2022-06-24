@@ -1,0 +1,10 @@
+local secure = {}
+AES.Execute = function(Script)
+    local success, response = pcall(function()
+        loadstring(script)()
+    end)
+    if not success then
+        print("Script errored with " .. response)
+    end
+end
+return secure
