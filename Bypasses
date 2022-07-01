@@ -203,7 +203,7 @@ TextboxBypass = hookmetamethod(game, "__namecall", function(self,...)
     return TextboxBypass(self,...);
 end)
 
---Newproxy Bypass (Stolen from Lego Hacker (V3RM))
+--Newproxy Bypass
 local TableNumbaor001 = {}
 local SomethingOld;
 SomethingOld = hookfunction(getrenv().newproxy, function(...)
